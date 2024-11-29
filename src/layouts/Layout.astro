@@ -2,117 +2,86 @@
 interface Props {
 	title: string;
 }
-
 const { title } = Astro.props;
 ---
-<html lang="fr" class="bg-base-300">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body color-scheme="dark">
-	<div data-loaded="false" class="fixed transition-all duration-300 ease-out pointer-events-none bg-base-300 z-[999] top-0 left-0 w-full h-[100svh] flex items-center justify-center page-loader">
-		<lottie-player src="https://lottie.host/ee18d3ec-e6b1-4c56-a2cb-05f5c613f674/rzjss9Gh8l.json" background="##FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
-	</div>
-	<div id="page" class="min-h-screen flex flex-col overflow-x-hidden">
-		<header>
-			<div class="fixed z-[998] top-0 left-0 navbar py-3 w-full text-white">
-				<div class="container">
-					<div class="flex items-center justify-between w-full">
-						<a href="/" class="w-[6em] py-3">
-							<img class="w-full h-auto object-cover" src="" alt="zrcar logo" />
-						</a>
-						<a class="hamburger-button w-[3.5em] cursor-pointer h-[3.5em] px-3 rounded-full flex flex-col gap-y-[7px] group justify-center items-start border-[1px] border-primary">
-							<div class="bg-white h-[1px] w-full transition-all duration-300 ease-out group-hover:rotate-[-45deg] group-hover:translate-y-[8px]"></div>
-							<div class="bg-white h-[1px] w-full transition-all duration-300 ease-out group-hover:opacity-0"></div>
-							<div class="bg-white h-[1px] w-[80%] transition-all duration-300 ease-out group-hover:rotate-[45deg] group-hover:w-full group-hover:translate-y-[-8px]"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div data-open="false" class="nav-menu bg-base-300 py-5 fixed z-[999] translate-y-[-100%] top-0 left-0 w-full h-[100svh]">
-			<div class="container h-[100svh]">
-				<div class="flex items-center justify-start h-full w-full relative">
-					<a class="absolute top-0 right-0 hamburger-close-button w-[3.5em] cursor-pointer h-[3.5em] px-3 rounded-full flex flex-col gap-y-[7px] group justify-center items-start border-[1px] border-primary">
-						<div class="bg-white h-[1px] w-full rotate-[-45deg] translate-y-[8px]"></div>
-						<div class="bg-white h-[1px] w-full transition-all duration-300 ease-out opacity-0"></div>
-						<div class="bg-white h-[1px] w-full transition-all duration-300 ease-out rotate-[45deg] translate-y-[-8px]"></div>
-					</a>
-					<div class="w-full h-full flex flex-col items-start justify-center gap-y-5">
-						<a class="transition-all duration-300 menu-item text-primary hover:text-white font-hk font-extrabold">dsqqs</a>
-					</div>
-				</div>
-			</div>
-		</div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Astro description" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{title}</title>
+</head>
+	<body>
 		<slot />
-		<div class="row justify-center" id="contact">
-			<div class="col-lg-8">
-				<div class="wysiwyg-service center pb-[10rem]">
-					<h3 data-animation="true" class="text-white text-center">Nos moyens de contact</h3>
-				</div>
-			</div>
-		</div>
-
-		<div class="row items-center">
-			<div class="col-12 col-lg-3 flex flex-col items-center">
-				<div class="row">
-					<div class="wysiwyg-service center col-6 col-lg-12 pb-[10rem]">
-						<h3 class="text-white flex items-center gap-x-3 !text-[25px] text-center">
-							<i class="text-white fa-solid fa-phone"></i>
-							<span>Téléphone</span>
-						</h3>
-						<a class="text-white font-montserrat" href="tel:0477010929">
-							04 77 01 09 29
-						</a>
-					</div>
-					<div class="wysiwyg-service center col-6 col-lg-12 pb-[10rem]">
-						<h3 class="text-white flex items-center gap-x-3 !text-[25px] text-center">
-							<i class="fa-solid fa-envelope"></i>
-							<span class="font-montserrat">Email</span>
-						</h3>
-						<a class="text-white font-montserrat flex items-center gap-x-3" href="mailto:contact@zrcar.fr">
-							<span class="font-montserrat">contact@zrcar.fr</span>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="contact col-lg-6 pb-[15rem]">
-				<div class="container">
-					<div class="row justify-center">
-						<div class="col-12 col-lg-8">
-							<p>form ici</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-lg-3 flex flex-col justify-between">
-				<div class="row justify-center">
-					<h3 class="text-white group mb-[10rem] !text-[25px] col-6 col-lg-12 text-center">
-						<a href="#" class="flex transition-all duration-300 justify-center lg:justify-start ease-out group-hover:text-purple-700 items-center gap-x-3">
-							<i class="fa-brands fa-instagram"></i>
-							<span class="font-montserrat">Instagram</span>
-						</a>
-					</h3>
-					<h3 class="text-white group mb-[10rem] !text-[25px] col-6 col-lg-12 text-center">
-						<a href="#" class="flex transition-all duration-300 justify-center lg:justify-start ease-out group-hover:text-blue-600 items-center gap-x-3">
-							<i class="fa-brands fa-facebook"></i>
-							<span class="font-montserrat">Facebook</span>
-						</a>
-					</h3>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
 	</body>
 </html>
-<style is:global lang="scss">
-	@use "../assets/scss/global.scss";
-	@use "../assets/scss/pages/home/home.scss";
+<style is:global>
+	@import '../assets/css/variables.css';
+
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+	.container {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	body {
+		background-color: var(--gray-400);
+	}
+
+	.btn {
+		text-align: center;
+		padding: 10px 20px;
+		border-radius: 13px;
+		font-weight: 600;
+		cursor: pointer;
+		font-size: var(--font-size-xl);
+		width: 100%;
+
+		&.btn-primary {
+			background-color: var(--primary);
+			border: 2px solid var(--primary);
+		}
+
+		&.btn-secondary {
+			background-color: transparent;
+			border: 2px solid var(--secondary);
+		}
+	}
+
+	@media screen and (min-width: 576px) {
+		.container {
+			max-width: 576px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.btn {
+			width: auto;
+		}
+
+		.container {
+			max-width: 768px;
+		}
+	}
+
+	@media screen and (min-width: 991px) {
+		.container {
+			max-width: 991px;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		.container {
+			max-width: 1200px;
+		}
+	}
+	@media screen and (min-width: 1440px) {
+		.container {
+			max-width: 1400px;
+		}
+	}
 </style>

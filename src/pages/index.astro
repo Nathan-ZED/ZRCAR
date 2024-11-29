@@ -1,123 +1,158 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="ZRCAR">
 	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<div class="smooth-wrapper">
+			<div class="smooth-content relative">
+				<div class="hero h-[100svh] relative z-[50] bg-cover">
+					<div class="container">
+						<div class="hero-content relative z-3 text-center max-w-none text-neutral-content w-full flex justify-center">
+							<div class="flex flex-col items-center">
+								<span data-animateonce="true" class="font-hk">Bienvenue chez</span>
+								<h1 data-animateonce="true" class="services-text flex items-center text-start mb-5 font-bold">
+									<span class="text-red-600">ZR</span>CAR
+								</h1>
+								<div class="row justify-center">
+									<div class="col-12 col-lg-7">
+										<p class="mb-5 font-montserrat text-xl">Confiez votre véhicule à l'expertise d'un garagiste aguerri, capable d'intervenir sur toutes marques avec passion et professionnalisme.</p>
+									</div>
+								</div>
+								<div class="flex w-full sm:w-auto flex-col items-stretch gap-y-5 sm:flex-row sm:items-center gap-x-5">
+									<a href="#contenu-page" class="btn btn-primary flex gap-x-3 items-center w-full sm:w-auto">
+										<i class="fa-solid fa-arrow-down"></i>
+										Faire un tour
+									</a>
+									<a href="#contact" class="btn hero-contact btn-white btn-outline w-full sm:w-auto">
+										<i class="fa-solid fa-phone"></i>
+										Nous contacter
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-content overflow-hidden z-[50] relative">
+					<div class="hidden lg:block absolute pointer-events-none z-[0] top-[-10rem] left-0 w-full h-full">
+						<svg width="1355" height="7826" viewBox="0 0 1355 7826" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_d_1_3)">
+								<path d="M194.097 101C228.288 564.587 440.774 1503.55 1017.19 1550.72C1593.6 1597.88 926.789 2101.75 521.332 2347.79L130.552 2573C72.1763 2601.5 76.3126 2677.36 559.86 2752.82C1043.41 2828.28 1077.23 3596.28 1033.7 3970.84L862.076 5068C828.385 5382.43 677.444 5923.21 343.204 5570.89C-74.5956 5130.49 838.559 4877.58 1061.22 5248.41C1239.35 5545.07 831.888 6274.82 605.893 6602.61C503.819 6703.62 346.306 6935.12 532.84 7053.03C719.374 7170.95 771.345 7547.47 774.013 7721" stroke="#812222" stroke-width="16" stroke-dasharray="32 32" shape-rendering="crispEdges"/>
+							</g>
+							<defs>
+								<filter id="filter0_d_1_3" x="0.0289917" y="0.41156" width="1354.3" height="7824.71" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+									<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+									<feOffset dx="3" dy="2"/>
+									<feGaussianBlur stdDeviation="51"/>
+									<feComposite in2="hardAlpha" operator="out"/>
+									<feColorMatrix type="matrix" values="0 0 0 0 0.558887 0 0 0 0 0.0233506 0 0 0 0 0.0233506 0 0 0 1 0"/>
+									<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3"/>
+									<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape"/>
+								</filter>
+							</defs>
+						</svg>
+					</div>
+					<section class="slider-section py-5">
+						<h2 class="font-hk text-white text-center font-normal pb-5">Ils nous font confiance</h2>
+						<div class="slider opacity-[.6]">
+							<div class="slide-track-1">
+								<div class="slide">
+									<img src="<?=$partenaire['url']?>" alt="<?=$partenaire['alt']?>">
+								</div>
+								<div class="slide">
+									<img src="<?=$partenaire['url']?>" alt="<?=$partenaire['alt']?>">
+								</div>
+								<div class="slide">
+									<img src="<?=$partenaire['url']?>" alt="<?=$partenaire['alt']?>">
+								</div>
+								<div class="slide">
+									<img src="<?=$partenaire['url']?>" alt="<?=$partenaire['alt']?>">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="contenu-page" class="relative z-[2] section-services pt-[10rem]">
+						<div class="container flex flex-col gap-y-[5rem]">
+							<div class="row justify-center pb-[10rem] lg:pb-[25rem]">
+								<div class="col-lg-10 flex flex-col gap-y-[2rem]">
+									<h2 data-animation="true" class="services-text text-center words text-white font-hk font-bold leading-[.8]">Faites de la route un lieu sur</h2>
+									<p  data-animation="true" class="services-paragraph text-center font-montserrat text-white/50 words leading-[1.5] font-normal">L'esprit ZRCar c'est avant tout une passion pour l'automobile qui se reflète dans chaque coup de clé et chaque diagnostic. En tant que garage indépendant multimarque, nous mettons notre expertise au service de l'entretien et de la réparation de tout véhicule, que ce soit votre fidèle citadine ou votre robuste SUV. Nous traitons chaque voiture avec le même soin et la même attention que nous accorderions à un modèle de collection</p>
+								</div>
+							</div>
+						</div>
+						<div class="pinned-services">
+							<div class="row gap-y-[2rem] justify-center pb-[10rem] lg:pb-[25rem]">
+								<div data-animation="true" class="col-10 col-lg-5 wysiwyg-service font-montserrat text-white/50 leading-[1.5]">
+									<a class="btn btn-service btn-primary">
+										sqdqsdq
+									</a>
+								</div>
+								<div class="col-10 col-lg-4 h-[30vh] img-parallax rounded-[20px] bg-cover"></div>
+							</div>
+						</div>
+					</section>
+					<section id="chiffres" class="relative overflow-hidden py-20 lg:py-40 mb-[15rem]">
+						<div class="bg-primary/60 absolute top-0 left-0 w-full h-full z-[1]"></div>
+						<img class="bg-parallax w-[120%] h-[120%] object-cover top-0 left-0 absolute z-[0]" src="<?=get_the_post_thumbnail_url()?>" alt="chiffres" />
+						<div class="container gx-5 gx-lg-0 relative z-[1]">
+							<div class="row lg:flex-row-reverse gap-y-[2rem] items-start justify-between">
+								<div class="col-12 col-md-6">
+									<a class="flex items-center gap-x-3 justify-center lg:justify-end">
+										<img src="<?=$section['image_autofirst']['url']?>" alt="Logo autofirst" />
+										<span class="text-white font-montserrat text-[18px]">Garage certifié AutoFirst®</span>
+									</a>
+								</div>
+								<div class="col-12 col-md-6">
+									<div class="wysiwyg-chiffres">
+									</div>
+								</div>
+							</div>
+							<div class="row gap-y-[3rem] items-start">
+								<div class="col-12 col-lg-4">
+									<div class="w-full text-white h-full flex flex-col items-center gap-y-2 lg:gap-y-4">
+										<i class="fa-solid <?=$chiffre['nom_de_licone']?> text-[5em]"></i>
+										<span class="text-white font-hk nombre font-bold"><?=$chiffre['nombre']?></span>
+										<span class="text-white font-montserrat nom text-center leading-[1.2]"><?=$chiffre['nom']?></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="container">
+						<div class="flex flex-col gap-y-[5rem]">
+							<div class="row justify-center pb-[15rem]">
+								<div class="col-lg-10 flex flex-col gap-y-[2rem]">
+									<h2 data-animation="true" class="services-text text-center words text-white font-hk font-bold leading-[.8]">Envie d'acquérir un nouveau véhicule ?</h2>
+									<p  data-animation="true" class="services-paragraph text-center font-montserrat text-white/50 words leading-[1.5] font-normal">Venez découvrir ce que signifie être réellement écouté et compris dans vos choix automobiles. Chez ZRCAR, vous êtes bien plus qu'un client : vous êtes un passionné d'automobile, et vous méritez une attention particulière. Pour une vente personnalisée, des conseils d'experts et une expérience d'achat unique, ZRCAR est votre destination.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<section class="ventes w-full mb-[10rem]">
+						<h3 data-animation="true" class="services-text pb-[6rem] font-hk font-bold text-white text-center">Nos dernières ventes</h3>
+						<div class="horizontal-scroll row gap-x-[4rem] flex-nowrap mb-[15rem] items-stretch">
+							<div class="horizontal-scroll-wrap snap-x overflow-x-scroll lg:overflow-x-visible row gap-x-[2rem] lg:gap-x-[4rem] flex-nowrap lg:ps-0" style="padding: 0 3rem 0">
+								<div class="card snap-center px-0 col-12 col-md-6 col-lg-5 col-xl-4 col-xxl-3 bg-primary/30 backdrop-blur-2xl border-[1px] border-primary shadow-xl">
+									<figure class="h-[60%] w-full">
+										<img class="object-cover w-full h-full" src="/bonjour" />
+									</figure>
+									<div class="card-body">
+										<div class="row items-center pb-3">
+											<h2 class="card-title text-white col-10 font-hk">
+											</h2>
+											<span class="font-montserrat text-white col-2 font-light">2021</span>
+										</div>
+										<div class="card-content pb-4">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>

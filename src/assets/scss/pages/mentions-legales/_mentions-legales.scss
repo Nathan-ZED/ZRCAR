@@ -1,0 +1,24 @@
+  .mentions-legales-wysiwyg {
+    h2,
+    h3 {
+      @apply text-white font-hk font-bold mb-5;
+      font-size: clamp(2.3125rem, 1.7232rem + 2.9464vw, 4.375rem);
+    }
+
+    p {
+      @apply text-white/70 font-montserrat pb-4;
+      font-size: clamp(1.125rem, 1rem + 0.625vw, 1.5625rem);
+
+      a {
+        @apply text-primary underline cursor-pointer;
+      }
+    }
+  }
+
+  .page-template-mentions-legales {
+    p {
+      &:last-child {
+        @apply mb-[10rem];
+      }
+    }
+  }

@@ -1,4 +1,5 @@
 ---
+import Navbar from "../components/Navbar/Navbar";
 interface Props {
 	title: string;
 }
@@ -14,6 +15,7 @@ const { title } = Astro.props;
 	<title>{title}</title>
 </head>
 	<body>
+		<Navbar />
 		<slot />
 	</body>
 </html>
@@ -30,7 +32,47 @@ const { title } = Astro.props;
 	}
 
 	body {
-		background-color: var(--gray-400);
+		background-color: var(--secondary-dark);
+
+		h1 {
+			font-size: var(--font-size-3xl);
+		}
+
+		h2 {
+			font-size: var(--font-size-2xl);
+		}
+
+		h3 {
+			font-size: var(--font-size-xl);
+		}
+
+		p {
+			font-size: var(--font-size-lg);
+		}
+	}
+
+	nav {
+		a {
+			transition: all .3s ease-in-out;
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background: var(--primary);
+				transition: width .3s;
+			}
+
+			&:hover {
+				color: var(--primary);
+				&:after {
+					width: 100%;
+				}
+			}
+		}
 	}
 
 	.btn {
@@ -41,15 +83,27 @@ const { title } = Astro.props;
 		cursor: pointer;
 		font-size: var(--font-size-xl);
 		width: 100%;
+		transition: all .2s ease-in-out;
 
 		&.btn-primary {
 			background-color: var(--primary);
 			border: 2px solid var(--primary);
+
+			&:hover {
+				background-color: var(--primary-dark);
+				border: 2px solid var(--primary-dark);
+			}
 		}
 
 		&.btn-secondary {
 			background-color: transparent;
-			border: 2px solid var(--secondary);
+			border: 2px solid var(--gray-300);
+
+			&:hover {
+				background-color: var(--gray-300);
+				border: 2px solid var(--gray-300);
+				color: var(--secondary-dark);
+			}
 		}
 	}
 
